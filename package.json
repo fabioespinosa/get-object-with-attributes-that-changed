@@ -1,0 +1,15 @@
+{
+    "name": "get-object-with-attributes-that-changed",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "ava"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "ava": "^1.2.0"
+    }
+}
