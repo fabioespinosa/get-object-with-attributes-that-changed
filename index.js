@@ -1,6 +1,18 @@
 const assert = require('assert').strict;
 module.exports = (object1, object2) => {
-    // If either object1 or object2 is object and other is array, throw eeror
+    if (object1 === null) {
+        throw 'first object cannot be null';
+    }
+    if (object2 === null) {
+        throw 'second object cannot be null';
+    }
+    if (typeof object1 === 'undefined') {
+        throw 'first object cannot be undefined';
+    }
+    if (typeof object2 === 'undefined') {
+        throw 'second object cannot be undefined';
+    }
+    // If either object1 or object2 is object and other is array, throw error
     if (Array.isArray(object1) && !Array.isArray(object2)) {
         throw 'Comparing incompatible types';
     }
