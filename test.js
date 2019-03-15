@@ -171,3 +171,20 @@ test('with array that changes', t => {
         ['TCDS']
     );
 });
+
+test('with object with new properties', t => {
+    t.deepEqual(
+        getObjectWithAttributesThatChanged(
+            { hello: 'hello', changed_value: 'first', other_value: 'other' },
+            {
+                hello: 'hello',
+                changed_value: 'second',
+                extra_value: 'should appear'
+            }
+        ),
+        {
+            changed_value: 'second',
+            extra_value: 'should appear'
+        }
+    );
+});

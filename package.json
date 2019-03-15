@@ -1,24 +1,24 @@
 {
-  "name": "get-object-with-attributes-that-changed",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava"
-  },
-  "keywords": [],
-  "author": "Fabio Espinosa",
-  "license": "MIT",
-  "devDependencies": {
-    "ava": "^1.2.0"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fabioespinosa/get-object-with-attributes-that-changed.git"
-  },
-  "bugs": {
-    "url": "https://github.com/fabioespinosa/get-object-with-attributes-that-changed/issues"
-  },
-  "homepage": "https://github.com/fabioespinosa/get-object-with-attributes-that-changed#readme",
-  "description": ""
+    "name": "get-object-with-attributes-that-changed",
+    "version": "1.0.1",
+    "main": "index.js",
+    "scripts": {
+        "test": "ava"
+    },
+    "keywords": [],
+    "author": "Fabio Espinosa",
+    "license": "MIT",
+    "devDependencies": {
+        "ava": "^1.2.0"
+    },
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fabioespinosa/get-object-with-attributes-that-changed.git"
+    },
+    "bugs": {
+        "url": "https://github.com/fabioespinosa/get-object-with-attributes-that-changed/issues"
+    },
+    "homepage": "https://github.com/fabioespinosa/get-object-with-attributes-that-changed#readme",
+    "description": ""
 }
