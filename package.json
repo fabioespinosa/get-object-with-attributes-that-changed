@@ -11,7 +11,9 @@
     "devDependencies": {
         "ava": "^1.2.0"
     },
-    "dependencies": {},
+    "dependencies": {
+        "deep-equal": "^1.0.1"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/fabioespinosa/get-object-with-attributes-that-changed.git"

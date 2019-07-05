@@ -1,4 +1,5 @@
 const assert = require('assert').strict;
+const deepEqual = require('deep-equal');
 module.exports = (object1, object2) => {
     if (object1 === null) {
         throw 'first object cannot be null';
@@ -31,9 +32,9 @@ module.exports = (object1, object2) => {
     for (const [key, val] of Object.entries(object2)) {
         const possible_old_value = object1[key];
         const possible_new_value = val;
-        try {
-            assert.deepStrictEqual(possible_old_value, possible_new_value);
-        } catch (e) {
+        if (
+            !deepEqual(possible_old_value, possible_new_value, { strict: true })
+        ) {
             if (Array.isArray(returned_object)) {
                 returned_object.push(val);
             } else {
@@ -43,5 +44,3 @@ module.exports = (object1, object2) => {
     }
     return returned_object;
 };
-
-module.exports(['DAQ', 'DT'], ['DAQ', 'DT', 'TCDS']);
